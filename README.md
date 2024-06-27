@@ -1,4 +1,4 @@
-# Simple_App
+# MyPlan_App
 Kotlin을 사용해서 일정 관리 앱을 구현하는 개인 프로젝트를 진행했습니다.   
 <br/><br/>
 
