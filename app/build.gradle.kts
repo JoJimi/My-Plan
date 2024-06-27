@@ -7,6 +7,10 @@ android {
     namespace = "com.example.myplan"
     compileSdk = 34
 
+    viewBinding{
+        enable = true
+    }
+
     defaultConfig {
         applicationId = "com.example.myplan"
         minSdk = 24
