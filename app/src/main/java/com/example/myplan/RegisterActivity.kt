@@ -14,6 +14,7 @@ class RegisterActivity : AppCompatActivity() {
     lateinit var binding: ActivityRegisterBinding
     var CheckId:Boolean=false
     var CheckNick:Boolean=false
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)

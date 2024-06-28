@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 if (checkUserpass == true) {
                     Toast.makeText(this, "로그인 성공했습니다.", Toast.LENGTH_SHORT).show()
 
-                    val intent = Intent(this, PlanActivity::class.java)
+                    val intent = Intent(this, TodoActivity::class.java)
                     startActivity(intent)
                 }
                 else {
