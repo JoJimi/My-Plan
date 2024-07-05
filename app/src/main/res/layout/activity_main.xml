@@ -22,6 +22,7 @@
         android:id="@+id/id"/>
 
     <EditText
+        android:inputType="textPassword"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:hint="비밀번호"

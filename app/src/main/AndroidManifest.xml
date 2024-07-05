@@ -13,21 +13,25 @@
         android:theme="@style/Theme.MyPlan"
         tools:targetApi="31">
         <activity
+            android:name=".PlanAddActivity"
+            android:exported="false"
+            android:parentActivityName=".PlanActivity"/>
+        <activity
             android:name=".RegisterActivity"
             android:exported="false"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".UserActivity"
             android:exported="false"
-            android:parentActivityName=".TodoActivity"/>
+            android:parentActivityName=".TodoActivity" />
         <activity
             android:name=".ClockActivity"
             android:exported="false"
-            android:parentActivityName=".TodoActivity"/>
+            android:parentActivityName=".TodoActivity" />
         <activity
             android:name=".PlanActivity"
             android:exported="false"
-            android:parentActivityName=".TodoActivity"/>
+            android:parentActivityName=".TodoActivity" />
         <activity
             android:name=".TodoActivity"
             android:exported="false" />

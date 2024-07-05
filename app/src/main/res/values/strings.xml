@@ -4,4 +4,6 @@
     <string name="editPassword_hint"><font size="14">8~15자 영문/숫자 조합으로 입력</font></string>
     <string name="nickname_hint"><font size="14">4~15자 한글/영문/슷자 조합으로 입력</font></string>
     <string name="phoneNum_hint"><font size="14">- 제외 휴대폰 번호</font></string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
 </resources>
