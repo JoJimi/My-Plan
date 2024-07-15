@@ -15,9 +15,6 @@ class PlanActivity : AppCompatActivity() {
         binding = ActivityPlanBinding.inflate(layoutInflater)
         setContentView(binding.root)
         title = "시간표"
-
-
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
