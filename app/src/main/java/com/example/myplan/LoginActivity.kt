@@ -5,15 +5,15 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.myplan.databinding.ActivityMainBinding
+import com.example.myplan.databinding.ActivityLoginBinding
 
 // 로그인 화면
-class MainActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     var DB:DBHelper?=null
-    lateinit var binding:ActivityMainBinding
+    lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         title = ""
 

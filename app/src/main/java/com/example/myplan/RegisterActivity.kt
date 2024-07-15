@@ -105,7 +105,7 @@ class RegisterActivity : AppCompatActivity() {
                                     if(insert == true){
                                         Toast.makeText(this, "회원가입 완료했습니다.", Toast.LENGTH_SHORT).show()
 
-                                        val intent = Intent(applicationContext, MainActivity::class.java)
+                                        val intent = Intent(applicationContext, LoginActivity::class.java)
                                         startActivity(intent)
                                     }
                                     else{

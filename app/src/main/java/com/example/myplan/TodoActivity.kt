@@ -30,9 +30,7 @@ class TodoActivity : AppCompatActivity() {
 
         binding.mainDrawerView.setNavigationItemSelectedListener{
             when(it.itemId){
-                R.id.planView -> { startActivity(Intent(this, PlanActivity::class.java)) }
                 R.id.clockView -> { startActivity(Intent(this, ClockActivity::class.java)) }
-                R.id.userView -> { startActivity(Intent(this, UserActivity::class.java)) }
             }
             true
         }
