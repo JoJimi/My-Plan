@@ -15,6 +15,9 @@ class PlanAddActivity : AppCompatActivity() {
         binding = ActivityPlanAddBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var selected1: String
+        var selected2: String
+
         var weekdata = listOf("-선택하세요-", "월요일", "화요일", "수요일", "목요일", "금요일")
         var adapter1 = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, weekdata)
 
@@ -33,7 +36,7 @@ class PlanAddActivity : AppCompatActivity() {
                     position: Int,
                     id: Long
                 ) {
-                    val selected = weekdata.get(position)
+                    selected1 = weekdata.get(position)
                 }
                 override fun onNothingSelected(parent: AdapterView<*>?) {
                     // empty here
@@ -48,7 +51,7 @@ class PlanAddActivity : AppCompatActivity() {
                     position: Int,
                     id: Long
                 ) {
-                    val selected = timedata.get(position)
+                    selected2 = timedata.get(position)
                 }
                 override fun onNothingSelected(parent: AdapterView<*>?) {
                     // empty here
