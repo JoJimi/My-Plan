@@ -1,5 +1,6 @@
 package com.example.myplan
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -59,8 +60,13 @@ class PlanAddActivity : AppCompatActivity() {
             }
 
         binding.completeBtn.setOnClickListener {
-            val intent = Intent(this, PlanActivity::class.java)
-            startActivity(intent)
+            val intent = Intent().apply {
+                putExtra("name", binding.name.text.toString())
+                putExtra("week", binding.weekSpinner.selectedItem.toString())
+                putExtra("time", binding.timeSpinner.selectedItem.toString())
+            }
+            setResult(Activity.RESULT_OK, intent)
+            finish()
         }
     }
 }
